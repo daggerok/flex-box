@@ -1,28 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,100,‌​100italic,300,300ita‌​lic,400italic,500,50‌​0italic,700,700itali‌​c,900italic,900')
+@media (min-with: 500px)
+  .container-1
+    display flex
+    // align-items flex-start
+    // align-items flex-end
+    // align-items center
+    align-items flex-strech // default
 
-.container-1
-  display flex
-  // align-items flex-start
-  // align-items flex-end
-  // align-items center
-  align-items flex-strech // default
+    // // change direction from row to column:
+    // flex-direction column
+    flex-direction row // default
 
-  // // change direction from row to column:
-  // flex-direction column
-  flex-direction row // default
+  .container-2
+    display flex
+    // justify-content center
+    // justify-content flex-end
+    // justify-content space-around
+    // justify-content space-between
+    // justify-content flex-start // default
+    justify-content space-between
 
 .container-1 div, .container-2 div
   border 1px solid #ddd
   padding 1%
-
-.container-2
-  display flex
-  // justify-content center
-  // justify-content flex-end
-  // justify-content space-around
-  // justify-content space-between
-  // justify-content flex-start // default
-  justify-content space-between // default
 
 .box-1
   flex 8
@@ -38,7 +37,7 @@
 
 .container-2-box
   // width 30% // use flex-bases for more flexibility
-  flex-basis 30%
+  flex-basis 27%
 
 body
   font-size 1em !important
