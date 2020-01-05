@@ -1,8 +1,8 @@
 {
-  "name": "css-flexbox",
+  "name": "undefined-starter",
   "version": "1.0.0",
-  "description": "Play with flex-box css",
-  "main": "index.js",
+  "description": "Starter",
+  "main": "src/index.html",
   "scripts": {
     "gh": "npm run build -- --public-url='/flex-box/'",
     "build": "parcel build src/index.html --no-cache",
@@ -13,8 +13,9 @@
     "logs": "pm2 logs"
   },
   "keywords": [
-    "flexbox",
-    "css"
+    "pm2",
+    "parcel",
+    "starter"
   ],
   "author": "daggerok",
   "license": "MIT",
