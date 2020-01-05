@@ -42,12 +42,12 @@ jobs:
       name: stylus-flex
       before_script:
         - cd $TRAVIS_BUILD_DIR/stylus-flex && npm i -E
-        - cd $TRAVIS_BUILD_DIR/stylus-flex && npm run serve &
-        - stop_any 5000
+        - cd $TRAVIS_BUILD_DIR/stylus-flex && npm start &
+        - sleep 3s
       script:
-        - http :5000
+        - http :3000
       after_script:
-        - stop_any 5000
+        - stop_any 3000
 #  - stage: deploy
 #    jdk: openjdk11
 #    name: GitHub Pages

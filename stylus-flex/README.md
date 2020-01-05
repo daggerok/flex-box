@@ -1,4 +1,4 @@
-# flex-box [![Build Status](https://travis-ci.org/daggerok/flex-box.svg?branch=master)](https://travis-ci.org/daggerok/flex-box)
+# flex-box
 
 rwad more:
 - [w3schools](http://www.w3schools.com/css/css3_flexbox.asp)
