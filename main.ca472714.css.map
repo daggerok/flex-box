@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.css"],"names":[],"mappings":"AAAA,WACI,YACJ,CACA,iBACI,MACJ","file":"main.ca472714.css","sourceRoot":"../src","sourcesContent":[".container {\n    display: flex;\n}\n.container input {\n    flex: 1;\n}\n"]}
