@@ -1,0 +1,2 @@
+@media (min-with:500px){.container-1{display:flex;align-items:flex-strech;flex-direction:row}.container-2{display:flex;justify-content:space-between}}.container-1 div,.container-2 div{border:1px solid #ddd;padding:1%}.box-1{flex:8;order:2}.box-2{flex:2;order:1}.box-3{flex:2;order:3}.container-2-box{flex-basis:27%}body{font-size:1.1em;font-family:Roboto}
+/*# sourceMappingURL=/flex-box/main.2470625a.css.map */
