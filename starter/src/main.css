@@ -4,12 +4,21 @@ body {
     margin: 0;
 }
 
-ul {
+.menu {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-li {
+.menu-item {
     text-align: center;
+}
+
+.menu-item:hover {
+    background-color: gray;
+    color: white;
+}
+
+.menu-item a:hover {
+    text-decoration: none;
 }

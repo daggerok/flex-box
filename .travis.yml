@@ -42,7 +42,7 @@ jobs:
       before_script:
         - cd $TRAVIS_BUILD_DIR/$SUB_PROJECT && npm i -E
         - cd $TRAVIS_BUILD_DIR/$SUB_PROJECT && npm start
-        - cd $TRAVIS_BUILD_DIR/$SUB_PROJECT && npm log &
+        - cd $TRAVIS_BUILD_DIR/$SUB_PROJECT && npm run logs &
         - wait_for 1234
       script:
         - http :1234/
