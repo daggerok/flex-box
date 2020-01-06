@@ -5,8 +5,8 @@ git:
   depth: false
 language: node_js
 node_js: lts/*
-services:
-  - xvfb
+#services:
+#  - xvfb
 python: 3.7
 addons:
   apt:
