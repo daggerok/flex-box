@@ -1,0 +1,30 @@
+{
+  "name": "undefined-starter",
+  "version": "1.0.0",
+  "description": "Starter",
+  "main": "src/index.html",
+  "scripts": {
+    "gh": "npm run build -- --public-url='/flex-box/'",
+    "build": "parcel build src/index.html --no-cache",
+    "start": "pm2 start 'npm run dev' --name app",
+    "dev:old": "parcel src/index.html src/index.html src/begin/index.html --open",
+    "dev": "parcel src/end/index.html --open --no-cache",
+    "restart": "pm2 restart app",
+    "stop": "pm2 kill",
+    "logs": "pm2 logs"
+  },
+  "keywords": [
+    "pm2",
+    "parcel",
+    "starter"
+  ],
+  "author": "daggerok",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "13.1.4",
+    "parcel-bundler": "1.12.4",
+    "pm2": "4.2.1",
+    "typescript": "3.7.4",
+    "webfontloader": "1.6.28"
+  }
+}
