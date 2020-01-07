@@ -1,0 +1,24 @@
+body {
+    font-family: Roboto, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-item:hover {
+    background-color: gray;
+    color: white;
+}
+
+.menu-item a:hover {
+    text-decoration: none;
+}
