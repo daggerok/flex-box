@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>end</title>
+  <link rel="stylesheet" href="../main.css">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <style>
+    .container {
+      display: flex; /* <- 1) enable flex */
+    }
+    .left {
+      flex: 1; /* <- 2.1) 50% for left column */
+    }
+    .right {
+      flex: 1; /* <- 2.2) 50% for right column */
+      display: flex; /* <- 3) enable nested flex for right column */
+      flex-direction: column; /* <- 4) declare direction (default row) */
+    }
+    .right-top {
+      background-color: #ce56ff;
+      flex: 1; /* <- 5.1) 50% for upper right row */
+    }
+    .right-bottom {
+      background-color: #d1ff90;
+      flex: 1; /* <- 5.1) 50% for lower right row */
+    }
+  </style>
+</head>
+<body class="container">
+<div class="left">
+  <h3>feature 1</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing olor dolores eligendi enim eum ex explicabo illo maiores nulla odit quia, soluta voluptas! Assumenda autem nam nulla quisquam repellendus? Ad alias aliquam distinctio doloribus, earum eius et facere illum natus nobis non officiis optio perferendis quis quo ratione rem saepe tenetur voluptate!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus deleniti dicta dignissimos dolorem esse et,
+    eveniet fuga maxime quas quod sunt suscipit ut voluptatum. A aliquam aspernatur assumenda atque consectetur deleniti
+    distinctio eaque earum eos explicabo, facere inventore iure maxime minus nobis non officia pariatur provident
+    quibusdam quidem ratione reiciendis, rem repellendus reprehenderit rerum sapiente sed sunt tempora voluptas
+    voluptates? Architecto dolore et ex placeat reprehenderit.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ipsam quasi quod? Dolorem esse facere impedit
+    nemo nisi placeat, provident sint suscipit?</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos libero, nam officiis quaerat quod
+    reprehenderit tempore vel? At consequuntur deleniti dolore, dolorem eius eum facilis id in molestias nesciunt
+    quaerat quam quisquam soluta vel veniam.</p>
+</div>
+<div class="right">
+  <div class="right-top">
+    <h3>feature 2</h3>
+  </div>
+  <div class="right-bottom">
+    <h3>feature 3</h3>
+  </div>
+</div>
+</body>
+</html>
