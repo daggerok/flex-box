@@ -3,25 +3,16 @@ notifications:
 git:
   quiet: true
   depth: false
-language: node_js
+language: python
+python: 3.8
 node_js: lts/*
-#services:
-#  - xvfb
-python: 3.7
 addons:
   apt:
     update: false
     packages:
       - curl
-      - python3-pip
-#      - libappindicator1
-#      - fonts-liberation
-#      - google-chrome-stable
 install: true
 before_install:
-  #  - |
-  #    export CHROME_BIN=/usr/bin/google-chrome
-  #    export DISPLAY=:99.0
   - |
     if [ ! -f ${HOME}/.local/daggerok/bash-functions/master/main.bash ] ; then
       mkdir -p ${HOME}/.local/daggerok/bash-functions/master
@@ -31,8 +22,8 @@ before_install:
     stop_any 3000 5000
   - |
     export PATH=$HOME/.local/bin:$PATH
-    pip3 install --user --upgrade pip setuptools
-    pip install --user --upgrade httpie
+    python -m pip install --upgrade pip setuptools pyopenssl
+    python -m pip install --upgrade httpie
 jobs:
   include:
     - stage: test
