@@ -27,6 +27,20 @@ before_install:
 jobs:
   include:
     - stage: test
+      name: ui-fundamentals
+      env:
+        - SUB_PROJECT=ui-fundamentals
+      before_script:
+        - cd $TRAVIS_BUILD_DIR/$SUB_PROJECT && npm i -E
+        - cd $TRAVIS_BUILD_DIR/$SUB_PROJECT && npm start
+        - cd $TRAVIS_BUILD_DIR/$SUB_PROJECT && npm run logs &
+        - wait_for 1234
+      script:
+        - http :1234/
+        - http :1234/begin/index.html
+        - http :1234/end/index.html
+      after_script: cd $TRAVIS_BUILD_DIR/$SUB_PROJECT && npm stop
+    - stage: test
       name: rows-and-columns
       env:
         - SUB_PROJECT=rows-and-columns
@@ -153,7 +167,7 @@ jobs:
       name: GitHub Pages
       env:
         - secure: "VsvRclyyHKopKO51aIMdcVpvldjWSj90z/tQUeJvJMMzae9mNsZmSEdZxh97KR0i591EBE1nIJVyZYP3wtUMVEVfMuZbQ40uCiBGFSuVcBmFbTYvfdihDQ6Wm6oZtL+rKbfSKcBjh04sXDaslqtX0CS18x21Lk6ozgQkmmCKIoR+JfOWm5mJjPjBjHB/n1O+38dXMQrnTmjTL5blBMLoBEQehzKTyt6v3FFJh0/hn0sQp/KMQHi+5/DcUfQV1HTzz+lWgfPmvDJ56lyu8DDUy9RopXedLVCHmASgYw9mvOeJr+A0DNOJB01GJI4KalkEGcfIzrhpF/hCB7Dc9v1jwDKJ93tbEDy1HhQFSZA3yY5+uRP+905e5pJWfid1cPJcwLs8SzKyZhul5pWwE3kx/UjOptfvW8d5ULxzkI3DTLg27tfMjdgzyGTFg1VnoomcigG973xP6TJfE11AbtnfQ/Q8+OKBXRR5jEpacx/7bIxcWgH5pGTBcpO4gLmTbWT97Nw0DI0kIbZxT0H3UWMLH4GbcsR1N26IfSV85ShuC2fosiw/yVLFE6JiPZzkY+FIQlaY1AIINtHPN+e2oI8pRBQzKytU4DWm4eTRc7jgNG0ozdputwSBVbH/TZsFB1xRiXOOPdq6AHNTed0T9QcygKyFLblpFUzmi5AMySZce7w="
-        - SUB_PROJECT=rows-and-columns
+        - SUB_PROJECT=ui-fundamentals
       script: skip
       before_deploy:
         - set -e
