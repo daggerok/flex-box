@@ -20,13 +20,16 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Clone git project
         uses: actions/checkout@v2
-      - name: Install / upgrade pip
+      - name: Install HTTPie, Run CI tests
         shell: bash
         run: |
+          echo install...
           python -m pip install --upgrade pip setuptools
           pip install --upgrade httpie
           npm install -g wait-port
+          echo run...
           cd $GITHUB_WORKSPACE && npm i
           cd $GITHUB_WORKSPACE && npm run dev &
+          echo test...
           wait-port 1234
           http get :1234
