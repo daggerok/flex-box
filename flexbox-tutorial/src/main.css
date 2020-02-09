@@ -1,0 +1,38 @@
+/* general */
+
+body,
+html,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    background: #27ff8e;
+    border: black solid 1em;
+    padding: 1em;
+}
+
+/* custom */
+
+ul {
+    display: flex;
+    /*justify-content: space-between;*/
+    /*justify-content: space-around;*/
+    justify-content: space-evenly;
+}
