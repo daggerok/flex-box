@@ -31,8 +31,8 @@ jobs:
         run: |
           pwd
           cd $GITHUB_WORKSPACE/ui-fundamentals && npm i
-          cd $GITHUB_WORKSPACE/ui-fundamentals && npm start &
-          cat *.log
+          cd $GITHUB_WORKSPACE/ui-fundamentals && npm start
+          cd $GITHUB_WORKSPACE/ui-fundamentals && npm run logs &
       - name: Test
         shell: bash
         run: |
