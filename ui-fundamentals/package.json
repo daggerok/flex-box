@@ -7,7 +7,7 @@
     "gh": "npm run build -- --public-url='/flex-box/'",
     "build": "parcel build src/index.html --no-cache",
     "start": "pm2 start 'npm run dev' --name app",
-    "dev": "parcel src/index.html --no-cache",
+    "dev": "parcel src/index.html --open --no-cache",
     "restart": "pm2 restart app",
     "stop": "pm2 kill",
     "logs": "pm2 logs"
