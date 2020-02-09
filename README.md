@@ -1,4 +1,4 @@
-# flex-box [![Build Status](https://travis-ci.org/daggerok/flex-box.svg?branch=master)](https://travis-ci.org/daggerok/flex-box)
+# flex-box [![Build Status](https://travis-ci.org/daggerok/flex-box.svg?branch=master)](https://travis-ci.org/daggerok/flex-box) [![CI](https://github.com/daggerok/flex-box/workflows/CI/badge.svg)](https://github.com/daggerok/flex-box/actions)
 
 ## resources
 
